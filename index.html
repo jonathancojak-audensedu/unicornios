@@ -698,7 +698,6 @@ function startGame() {
 // =============================================
 function goMap() {
   sfxClick();
-  document.getElementById('map-name').textContent = G.name;
   const stars = G.paintDone.filter(Boolean).length + G.puzzleDone.filter(Boolean).length;
   document.getElementById('stars-bar').textContent = '⭐'.repeat(stars) + '☆'.repeat(6-stars);
   buildRow('paint-row','painting');
